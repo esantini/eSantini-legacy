@@ -176,10 +176,7 @@ var allTasks = (function(){
 })();
 // allTasks.push('watch_all');
 
-gulp.task('build', function() {
-
-});
-allTasks.push('build', 'wacha'); //, 'Run_Karma_Tests'
+allTasks.push('wacha');
 
 // @types are inconsistent:
 gulp.task('default', allTasks as any ); // should be: gulp.parallel( allTasks );
