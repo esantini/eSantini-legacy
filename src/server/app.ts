@@ -1,7 +1,9 @@
+import * as compress from "compression";
 import * as express from 'express';
 import * as path from 'path';
 
 var app = express();
+app.use(compress());
 
 // Get port from environment and store in Express.
 var port = normalizePort(process.env.PORT || '4000');
