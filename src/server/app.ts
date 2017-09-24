@@ -27,6 +27,10 @@ app.use('/logo$', function(req: express.Request, res: express.Response, next: ex
 	res.render('logo', { page: "logo" });
 });
 
+app.use('/earthVenus$', function(req: express.Request, res: express.Response, next: express.NextFunction) {
+	res.render('earthVenus', { page: "tattoo" });
+});
+
 interface myError extends Error {
 	status?: any;
 }
